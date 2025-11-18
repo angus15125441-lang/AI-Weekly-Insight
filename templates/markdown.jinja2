@@ -1,0 +1,66 @@
+# {{ title }}
+
+> {{ intro }}
+
+## 📊 本周概览
+
+- **收录链接**: {{ total_links }} 条
+- **核心主题**: {{ ', '.join(main_topics) }}
+- **推荐指数**: {{ '⭐' * recommendation_score }}
+
+---
+
+{% for category in categories %}
+{% if category.content_items %}
+## {{ category.icon }} {{ category.name }}
+
+{% for item in category.content_items %}
+### {{ item.title }}
+
+**链接**: [{{ item.url }}]({{ item.url }})
+**要点**: {{ item.summary }}
+{% if item.tags %}**标签**: {% for tag in item.tags %}#{{ tag }} {% endfor %} {% endif %}
+{% if item.rating %}**评分**: {{ '⭐' * item.rating }}{% endif %}
+
+{% if item.highlights %}
+**亮点**:
+{% for highlight in item.highlights %}
+- {{ highlight }}
+{% endfor %}
+{% endif %}
+
+---
+
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+{% if highlights %}
+## 🎨 本周精选
+
+本周最值得关注的内容：
+
+{% for item in highlights %}
+{{ loop.index }}. **[{{ item.title }}]({{ item.url }})** ({{ item.category }})
+   - {{ item.summary }}
+   - 评分: {{ '⭐' * item.rating }}
+
+{% endfor %}
+{% endif %}
+
+---
+
+{% if editor_notes %}
+## 💭 编者按
+
+{{ editor_notes }}
+
+---
+
+{% endif %}
+
+{{ subscription_info }}
+
+---
+
+*生成时间: {{ generated_at }}*

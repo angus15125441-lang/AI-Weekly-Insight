@@ -1,0 +1,27 @@
+# {{ title }}
+
+> {{ intro }}
+
+## 📊 本周概览
+
+- **收录链接**: {{ total_links }} 条
+- **核心主题**: {{ main_topics | join(', ') }}
+- **推荐指数**: {{ '⭐' * recommendation_score }}
+
+---
+
+{% for category in categories %}
+## {{ category.icon }} {{ category.name }}
+
+{% for item in category.content_items %}
+### {{ item.title }}
+
+**URL**: {{ item.url }}
+**要点**: {{ item.summary }}
+**标签**: {% for tag in item.tags %}#{{ tag }} {% endfor %}
+
+---
+{% endfor %}
+{% endfor %}
+
+*生成时间: {{ generated_at }}*

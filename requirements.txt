@@ -1,0 +1,27 @@
+# AI×Design Newsletter Generator - Python Dependencies
+
+# Core dependencies
+anthropic>=0.18.0              # Claude API official SDK
+requests>=2.31.0               # HTTP requests
+beautifulsoup4>=4.12.0         # HTML parsing
+lxml>=4.9.0                    # XML/HTML parser
+click>=8.1.0                   # CLI framework
+jinja2>=3.1.0                  # Template engine
+python-dotenv>=1.0.0           # Environment variables
+
+# Data processing
+pandas>=2.0.0                  # Data handling (CSV import/export)
+pyyaml>=6.0                    # YAML configuration
+
+# Web scraping & content extraction
+readability-lxml>=0.8.0        # Article extraction
+html2text>=2020.1.16           # HTML to Markdown
+newspaper3k>=0.2.8             # News article extraction (optional)
+
+# Output formatting
+markdown>=3.4.0                # Markdown processing
+weasyprint>=60.0               # HTML to PDF (optional)
+
+# Utilities
+tqdm>=4.65.0                   # Progress bars
+python-dateutil>=2.8.0         # Date parsing

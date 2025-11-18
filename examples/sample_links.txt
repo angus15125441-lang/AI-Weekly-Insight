@@ -1,0 +1,22 @@
+# AI×Design 示例链接
+# 格式：每行一个 URL（以 # 开头的为注释）
+
+# AI 绘画工具
+https://www.midjourney.com/home
+https://openai.com/dall-e-3
+https://stability.ai/stable-diffusion
+
+# 设计工具
+https://www.figma.com/ai/
+https://www.adobe.com/products/firefly.html
+
+# 教程和资源
+https://github.com/awesome-stable-diffusion/awesome-stable-diffusion
+https://learnopenai.com/
+
+# 行业资讯
+https://www.theverge.com/ai-artificial-intelligence
+https://techcrunch.com/category/artificial-intelligence/
+
+# 设计案例
+https://www.awwwards.com/websites/ai/

@@ -1,0 +1,51 @@
+你是一位专业的 AI×Design 领域内容分析师。请分析以下网页内容：
+
+【网页信息】
+标题：{title}
+URL：{url}
+来源：{source}
+原始内容：
+{content}
+
+【分析任务】
+1. 核心观点：用2-3句话概括文章的核心价值和要点
+2. 内容类型：判断属于哪种类型（工具发布/教程/趋势分析/研究论文/案例分享/产品更新/视频演示/新闻资讯等）
+3. 推荐分类：从以下分类中选择最合适的1个（必选）
+   - tools: Tools & Products (新发布的 AI 设计工具和产品)
+   - tutorials: Tutorials & Guides (实用的教程和操作指南)
+   - trends: Design Trends (行业趋势和案例分析)
+   - insights: Insights & Thoughts (深度文章和观点)
+   - research: Research & Tech (技术论文和研究成果)
+   - videos: Videos & Demos (视频教程和产品演示)
+   - news: News & Updates (行业新闻和产品更新)
+
+4. 关键标签：提取3-5个最相关的标签（如：Midjourney, AI绘画, 提示词工程, AIGC, Stable Diffusion, Figma, 设计系统等）
+5. 价值评分：1-5分，评估对目标读者的价值
+   - 5分：必读，革命性内容或重要更新
+   - 4分：强烈推荐，高价值内容
+   - 3分：值得一看，有一定价值
+   - 2分：可选阅读，价值有限
+   - 1分：可忽略，价值较低
+
+6. 核心亮点：列出2-3个最值得关注的亮点
+
+【目标读者】
+- 汽车外观设计师转型 AI 工具应用
+- 对 AI 生成式设计感兴趣的创作者
+- 关注设计×技术交叉领域的从业者
+
+【输出格式】
+请严格按照以下 JSON 格式输出（不要有其他文字）：
+
+{{
+  "summary": "简洁的2-3句摘要，突出核心价值",
+  "content_type": "内容类型",
+  "category": "选择的分类ID（tools/tutorials/trends/insights/research/videos/news）",
+  "tags": ["标签1", "标签2", "标签3", "标签4"],
+  "rating": 4,
+  "highlights": [
+    "亮点1：具体描述",
+    "亮点2：具体描述",
+    "亮点3：具体描述"
+  ]
+}}
